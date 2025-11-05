@@ -8,15 +8,22 @@ Sistema de simulación de torneos con eliminación simple usando estructuras de 
 - Fecha: 2025-11-04
 
 ## Compilación
-
+Es necesario tener instalado g++ y cmake para compilar el proyecto.
 ```bash
-g++ -std=c++11 main.cpp player_queue.cpp bracket.cpp -o tournament
+./compile_run.bat
 ```
 
 ## Ejecución
-
+Al descargar el proyecto, existe un ejecutable previo en build, puede ejecutarse directamente.
+En caso de no existir, run.bat llama a compile_run.bat, sin embargo, compile_run.bat requiere que estén instalados g++ y cmake.
 ```bash
-./tournament
+./run.bat
+```
+
+## Ejecución manual (requiere ejecutable previo)
+```bash
+cd build
+./TournamentSim.exe
 ```
 
 ## Requisitos
@@ -27,14 +34,29 @@ g++ -std=c++11 main.cpp player_queue.cpp bracket.cpp -o tournament
 ## Estructura del Proyecto
 
 ```
-├── main.cpp           # Programa principal
-├── player.h           # Definición de jugador
-├── player_queue.h     # Interfaz de cola
-├── player_queue.cpp   # Implementación de cola circular
-├── bracket.h          # Interfaz de árbol de torneo
-├── bracket.cpp        # Implementación del bracket
-├── jugadores.txt      # Archivo de jugadores
-└── README.md          # Este archivo
+Tournament_Simulator/
+│   CMakeLists.txt       # CMake configuration file
+│   compile_run.bat      # Batch file to compile and run the program
+│   jugadores.txt        # File with player names
+│   README.md            # This file
+│   run.bat              # Batch file to run the program
+│
+├───.vscode
+│       settings.json    # Disable module call warnings, not required for compilation
+│
+├───include
+│       bracket.h        # Bracket definition to build tournament tree
+│       player.h         # Player definition
+│       player_queue.h   # Circular queue of players
+│
+├───src
+│       bracket.cpp      # Bracket implementation
+│       main.cpp         # Main function
+│       player_queue.cpp # Circular queue of players implementation
+│       text_utils.cpp   # Utility functions implementation
+│
+└───utils
+│       text_utils.h     # Utility functions declaration
 ```
 
 ## Decisiones de Diseño
