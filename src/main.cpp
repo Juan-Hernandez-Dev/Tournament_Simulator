@@ -6,12 +6,13 @@
 #include "player_queue.h"
 #include "player.h"
 #include "bracket.h"
+#include "text_utils.h"
+#include "luck_checker.h"
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
 #include <ctime>
 #include <cmath>
-#include "text_utils.h"
 
 #ifdef _WIN32
 #include <windows.h>
@@ -73,6 +74,14 @@ bool LoadPlayersFromFile(const std::string& filename,
 }
 
 int main() {
+    /// THE SACRED LUCK DOG MUST BE VALIDATED FIRST
+    if (!ValidateLuckDog()) {
+        ShowCurseMessage();
+        std::cout << "\nPress any key to accept your fate...\n";
+        std::cin.get();
+        return 666; // The number of the beast, obviously
+    }
+    
     ClearScreen();
     SetUTF8Encoding();
 

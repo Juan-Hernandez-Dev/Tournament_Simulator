@@ -1,6 +1,7 @@
 # ninja log v6
-18	908	7840275702628602	CMakeFiles/TournamentSim.dir/src/player_queue.cpp.obj	7253027d4f5f8c15
-6	2000	7840275702504611	CMakeFiles/TournamentSim.dir/src/bracket.cpp.obj	92506dde65330286
-24	2650	7840275702682174	CMakeFiles/TournamentSim.dir/src/text_utils.cpp.obj	fee16621ec085e44
-11	2739	7840275702567558	CMakeFiles/TournamentSim.dir/src/main.cpp.obj	344e96ec2bb46fcb
-2739	2939	7840275729824868	TournamentSim.exe	211e9e221cbad32f
+22	1234	7840315606849656	CMakeFiles/TournamentSim.dir/src/player_queue.cpp.obj	7253027d4f5f8c15
+11	1281	7840315606737483	CMakeFiles/TournamentSim.dir/src/luck_checker.cpp.obj	7a0700b120650ba8
+5	2301	7840315606674913	CMakeFiles/TournamentSim.dir/src/bracket.cpp.obj	92506dde65330286
+30	2955	7840315606927491	CMakeFiles/TournamentSim.dir/src/text_utils.cpp.obj	fee16621ec085e44
+17	2990	7840315606788412	CMakeFiles/TournamentSim.dir/src/main.cpp.obj	344e96ec2bb46fcb
+2990	3237	7840315636533071	TournamentSim.exe	2a309c3b15138cb5

@@ -20,6 +20,10 @@ add_executable(TournamentSim ${SOURCES} ${HEADERS})
 configure_file(${CMAKE_SOURCE_DIR}/jugadores.txt
                ${CMAKE_BINARY_DIR}/jugadores.txt COPYONLY)
 
+# Copy the sacred luck dog (DO NOT REMOVE OR MODIFY!)
+configure_file(${CMAKE_SOURCE_DIR}/the_luck_dog.txt
+               ${CMAKE_BINARY_DIR}/the_luck_dog.txt COPYONLY)
+
 # Optional: Add compiler warnings
 if(MSVC)
     target_compile_options(TournamentSim PRIVATE /W4)
