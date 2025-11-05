@@ -115,7 +115,7 @@ int main() {
     bracket.PrintRounds();
 
     std::cout << "\n" << BOLD << "FIN DEL TORNEO" << RESET << std::endl;
-    cout << "Press any key to continue...";
-    cin.get();  // Espera a que el usuario presione Enter
+    std::cout << "Press any key to continue...";
+    std::cin.get();  // Espera a que el usuario presione Enter
     return 0;
 }
