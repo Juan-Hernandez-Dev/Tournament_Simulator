@@ -1,0 +1,3 @@
+C:/Users/juanh/Dev/Projects/Tournament_Simulator/build/CMakeFiles/TournamentSim.dir
+C:/Users/juanh/Dev/Projects/Tournament_Simulator/build/CMakeFiles/edit_cache.dir
+C:/Users/juanh/Dev/Projects/Tournament_Simulator/build/CMakeFiles/rebuild_cache.dir
