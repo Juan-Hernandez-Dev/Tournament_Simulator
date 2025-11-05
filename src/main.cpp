@@ -81,7 +81,7 @@ int main() {
         std::cin.get();
         return 666; // The number of the beast, obviously
     }
-    
+
     ClearScreen();
     SetUTF8Encoding();
 
@@ -115,6 +115,7 @@ int main() {
     bracket.PrintRounds();
 
     std::cout << "\n" << BOLD << "FIN DEL TORNEO" << RESET << std::endl;
-
+    cout << "Press any key to continue...";
+    cin.get();  // Espera a que el usuario presione Enter
     return 0;
 }
